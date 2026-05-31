@@ -1,0 +1,145 @@
+POST http://localhost:3001/api/users
+Content-Type: application/json
+Accept: application/json
+
+{
+  "username": "acroziqin",
+  "password": "rahasia",
+  "name": "Achmad Choirur Roziqin"
+}
+
+### f5540222-4098-4f45-a6ae-75341992c014
+
+POST http://localhost:3001/api/users/login
+Content-Type: application/json
+Accept: application/json
+
+{
+  "username": "acroziqin",
+  "password": "rahasia"
+}
+
+###
+
+GET http://localhost:3001/api/users/current
+Content-Type: application/json
+Accept: application/json
+Authorization: a8427f0a-633b-4f2c-8387-a34a56679e9c
+
+###
+
+PATCH http://localhost:3001/api/users/current
+Content-Type: application/json
+Accept: application/json
+Authorization: a8427f0a-633b-4f2c-8387-a34a56679e9c
+
+{
+  "name": "Ceisya Kinaraisha"
+}
+
+###
+
+DELETE http://localhost:3001/api/users/logout
+Content-Type: application/json
+Accept: application/json
+Authorization: a8427f0a-633b-4f2c-8387-a34a56679e9c
+
+###
+
+POST http://localhost:3001/api/contacts
+Content-Type: application/json
+Accept: application/json
+Authorization: a8427f0a-633b-4f2c-8387-a34a56679e9c
+
+{
+  "first_name": "Joko",
+  "last_name": "Morro",
+  "email": "joko@pzn.com",
+  "phone": "123443124321"
+}
+
+###
+
+GET http://localhost:3001/api/contacts
+Content-Type: application/json
+Accept: application/json
+Authorization: a8427f0a-633b-4f2c-8387-a34a56679e9c
+
+###
+
+GET http://localhost:3001/api/contacts/501
+Content-Type: application/json
+Accept: application/json
+Authorization: a8427f0a-633b-4f2c-8387-a34a56679e9c
+
+###
+
+PUT http://localhost:3001/api/contacts/501
+Content-Type: application/json
+Accept: application/json
+Authorization: a8427f0a-633b-4f2c-8387-a34a56679e9c
+
+{
+  "first_name": "Rully",
+  "last_name": "Nugraha",
+  "email": "rully@pzn.com",
+  "phone": "123443124321"
+}
+
+###
+
+DELETE http://localhost:3001/api/contacts/501
+Content-Type: application/json
+Accept: application/json
+Authorization: a8427f0a-633b-4f2c-8387-a34a56679e9c
+
+### Create Address
+
+POST http://localhost:3001/api/contacts/500/addresses
+Content-Type: application/json
+Accept: application/json
+Authorization: a8427f0a-633b-4f2c-8387-a34a56679e9c
+
+{
+  "street": "Kantor",
+  "city": "Jakarta",
+  "province": "DKI JAKARTA",
+  "country": "Indonesia",
+  "postal_code": "324324"
+}
+
+###
+
+GET http://localhost:3001/api/contacts/500/addresses
+Content-Type: application/json
+Accept: application/json
+Authorization: a8427f0a-633b-4f2c-8387-a34a56679e9c
+
+###
+
+GET http://localhost:3001/api/contacts/500/addresses/58
+Content-Type: application/json
+Accept: application/json
+Authorization: a8427f0a-633b-4f2c-8387-a34a56679e9c
+
+### Update Address
+
+PUT http://localhost:3001/api/contacts/500/addresses/58
+Content-Type: application/json
+Accept: application/json
+Authorization: a8427f0a-633b-4f2c-8387-a34a56679e9c
+
+{
+  "street": "Kantor Bekerja",
+  "city": "Surabaya",
+  "province": "Jawa Timur",
+  "country": "Indonesia",
+  "postal_code": "324324"
+}
+
+### Remove Address
+
+DELETE http://localhost:3001/api/contacts/500/addresses/58
+Content-Type: application/json
+Accept: application/json
+Authorization: a8427f0a-633b-4f2c-8387-a34a56679e9c
