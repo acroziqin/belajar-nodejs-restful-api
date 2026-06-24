@@ -4,6 +4,9 @@
   "description": "Belajar NodeJS RESTful API",
   "main": "src/main.js",
   "scripts": {
+    "start": "node src/main.js",
+    "build": "prisma generate",
+    "postinstall": "prisma generate",
     "test": "jest -i"
   },
   "jest": {
