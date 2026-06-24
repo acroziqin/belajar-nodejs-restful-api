@@ -277,3 +277,23 @@ describe('GET /api/contacts', () => {
         expect(result.body.paging.total_items).toBe(6);
     });
 })
+
+describe('GET /api/contacts (Live DB)', () => {
+    it('should can search using name in page 2', async () => {
+        const result = await supertest(web)
+            .get('/api/contacts')
+            .query({
+                name: "s",
+                page: 1
+            })
+            .set('Authorization', '1ad1a320-70ac-4c85-aed0-85898e32e5fe');
+
+        logger.info(result.body.data)
+
+        expect(result.status).toBe(200);
+        expect(result.body.data.length).toBe(7);
+        expect(result.body.paging.page).toBe(1);
+        expect(result.body.paging.total_page).toBe(1);
+        expect(result.body.paging.total_items).toBe(7);
+    });
+})

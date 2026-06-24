@@ -75,7 +75,7 @@ Request Body :
 
 ```json
 {
-  "name": "Programmer Zaman Now Lagi", //optional
+  "name": "Programmer Zaman Now Lagi", // optional
   "password" : "new password" // optional
 }
 ```

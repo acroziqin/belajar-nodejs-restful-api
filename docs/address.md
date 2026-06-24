@@ -2,7 +2,7 @@
 
 ## Create Address API
 
-Endpoint : POST /api/contacts/:contactId/adresses
+Endpoint : POST /api/contacts/:contactId/addresses
 
 Headers :
 - Authorization : token
@@ -44,7 +44,7 @@ Response Body Error :
 
 ## Update Address API
 
-Endpoint : PUT /api/contacts/:contactId/adresses/:addressId
+Endpoint : PUT /api/contacts/:contactId/addresses/:addressId
 
 Headers :
 - Authorization : token
@@ -75,7 +75,7 @@ Response Body Success :
 Response Body Error :
 
 ## Get Address API
-Endpoint : GET /api/contacts/:contactId/adresses/:addressId
+Endpoint : GET /api/contacts/:contactId/addresses/:addressId
 
 Headers :
 - Authorization : token
@@ -105,7 +105,7 @@ Response Body Error :
 
 ## List Address API
 
-Endpoint : GET /api/contacts/:contactId/adresses
+Endpoint : GET /api/contacts/:contactId/addresses
 
 Headers :
 - Authorization : token
@@ -145,7 +145,7 @@ Response Body Error :
 
 ## Remove Address API
 
-Endpoint : DELETE /api/contacts/:contactId/adresses/:addressId
+Endpoint : DELETE /api/contacts/:contactId/addresses/:addressId
 
 Headers :
 - Authorization : token

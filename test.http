@@ -1,4 +1,4 @@
-POST http://localhost:3001/api/users
+POST http://localhost:3000/api/users
 Content-Type: application/json
 Accept: application/json
 
@@ -10,28 +10,28 @@ Accept: application/json
 
 ### f5540222-4098-4f45-a6ae-75341992c014
 
-POST http://localhost:3001/api/users/login
+POST http://localhost:3000/api/users/login
 Content-Type: application/json
 Accept: application/json
 
 {
-  "username": "acroziqin",
+  "username": "roziqin",
   "password": "rahasia"
 }
 
 ###
 
-GET http://localhost:3001/api/users/current
+GET http://localhost:3000/api/users/current
 Content-Type: application/json
 Accept: application/json
-Authorization: a8427f0a-633b-4f2c-8387-a34a56679e9c
+Authorization: 561a4dfa-dd6b-4ae6-a684-d415bfd23ce8
 
 ###
 
-PATCH http://localhost:3001/api/users/current
+PATCH http://localhost:3000/api/users/current
 Content-Type: application/json
 Accept: application/json
-Authorization: a8427f0a-633b-4f2c-8387-a34a56679e9c
+Authorization: 561a4dfa-dd6b-4ae6-a684-d415bfd23ce8
 
 {
   "name": "Ceisya Kinaraisha"
@@ -39,17 +39,17 @@ Authorization: a8427f0a-633b-4f2c-8387-a34a56679e9c
 
 ###
 
-DELETE http://localhost:3001/api/users/logout
+DELETE http://localhost:3000/api/users/logout
 Content-Type: application/json
 Accept: application/json
-Authorization: a8427f0a-633b-4f2c-8387-a34a56679e9c
+Authorization: 561a4dfa-dd6b-4ae6-a684-d415bfd23ce8
 
 ###
 
-POST http://localhost:3001/api/contacts
+POST http://localhost:3000/api/contacts
 Content-Type: application/json
 Accept: application/json
-Authorization: a8427f0a-633b-4f2c-8387-a34a56679e9c
+Authorization: 561a4dfa-dd6b-4ae6-a684-d415bfd23ce8
 
 {
   "first_name": "Joko",
@@ -60,24 +60,31 @@ Authorization: a8427f0a-633b-4f2c-8387-a34a56679e9c
 
 ###
 
-GET http://localhost:3001/api/contacts
+GET http://localhost:3000/api/contacts
 Content-Type: application/json
 Accept: application/json
-Authorization: a8427f0a-633b-4f2c-8387-a34a56679e9c
+Authorization: 561a4dfa-dd6b-4ae6-a684-d415bfd23ce8
 
 ###
 
-GET http://localhost:3001/api/contacts/501
+GET http://localhost:3000/api/contacts/10
 Content-Type: application/json
 Accept: application/json
-Authorization: a8427f0a-633b-4f2c-8387-a34a56679e9c
+Authorization: 561a4dfa-dd6b-4ae6-a684-d415bfd23ce8
 
 ###
 
-PUT http://localhost:3001/api/contacts/501
+GET http://localhost:3000/api/contacts?name=belas&page=2
 Content-Type: application/json
 Accept: application/json
-Authorization: a8427f0a-633b-4f2c-8387-a34a56679e9c
+Authorization: 561a4dfa-dd6b-4ae6-a684-d415bfd23ce8
+
+###
+
+PUT http://localhost:3000/api/contacts/501
+Content-Type: application/json
+Accept: application/json
+Authorization: 561a4dfa-dd6b-4ae6-a684-d415bfd23ce8
 
 {
   "first_name": "Rully",
@@ -88,17 +95,17 @@ Authorization: a8427f0a-633b-4f2c-8387-a34a56679e9c
 
 ###
 
-DELETE http://localhost:3001/api/contacts/501
+DELETE http://localhost:3000/api/contacts/501
 Content-Type: application/json
 Accept: application/json
-Authorization: a8427f0a-633b-4f2c-8387-a34a56679e9c
+Authorization: 561a4dfa-dd6b-4ae6-a684-d415bfd23ce8
 
 ### Create Address
 
-POST http://localhost:3001/api/contacts/500/addresses
+POST http://localhost:3000/api/contacts/500/addresses
 Content-Type: application/json
 Accept: application/json
-Authorization: a8427f0a-633b-4f2c-8387-a34a56679e9c
+Authorization: 561a4dfa-dd6b-4ae6-a684-d415bfd23ce8
 
 {
   "street": "Kantor",
@@ -110,24 +117,24 @@ Authorization: a8427f0a-633b-4f2c-8387-a34a56679e9c
 
 ###
 
-GET http://localhost:3001/api/contacts/500/addresses
+GET http://localhost:3000/api/contacts/500/addresses
 Content-Type: application/json
 Accept: application/json
-Authorization: a8427f0a-633b-4f2c-8387-a34a56679e9c
+Authorization: 561a4dfa-dd6b-4ae6-a684-d415bfd23ce8
 
 ###
 
-GET http://localhost:3001/api/contacts/500/addresses/58
+GET http://localhost:3000/api/contacts/500/addresses/58
 Content-Type: application/json
 Accept: application/json
-Authorization: a8427f0a-633b-4f2c-8387-a34a56679e9c
+Authorization: 561a4dfa-dd6b-4ae6-a684-d415bfd23ce8
 
 ### Update Address
 
-PUT http://localhost:3001/api/contacts/500/addresses/58
+PUT http://localhost:3000/api/contacts/500/addresses/58
 Content-Type: application/json
 Accept: application/json
-Authorization: a8427f0a-633b-4f2c-8387-a34a56679e9c
+Authorization: 561a4dfa-dd6b-4ae6-a684-d415bfd23ce8
 
 {
   "street": "Kantor Bekerja",
@@ -139,7 +146,7 @@ Authorization: a8427f0a-633b-4f2c-8387-a34a56679e9c
 
 ### Remove Address
 
-DELETE http://localhost:3001/api/contacts/500/addresses/58
+DELETE http://localhost:3000/api/contacts/500/addresses/58
 Content-Type: application/json
 Accept: application/json
-Authorization: a8427f0a-633b-4f2c-8387-a34a56679e9c
+Authorization: 561a4dfa-dd6b-4ae6-a684-d415bfd23ce8
