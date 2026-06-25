@@ -1,3 +1,26 @@
+POST https://belajar-nodejs-restful-api-production.up.railway.app/api/users
+Content-Type: application/json
+Accept: application/json
+
+{
+  "username": "acroziqin",
+  "password": "rahasia",
+  "name": "Achmad Choirur Roziqin"
+}
+
+###
+
+POST https://belajar-nodejs-restful-api-production.up.railway.app/api/users/login
+Content-Type: application/json
+Accept: application/json
+
+{
+  "username": "roziqin",
+  "password": "rahasia"
+}
+
+###
+
 POST http://localhost:3000/api/users
 Content-Type: application/json
 Accept: application/json

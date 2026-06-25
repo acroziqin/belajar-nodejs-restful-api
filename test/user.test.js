@@ -53,6 +53,14 @@ describe('POST /api/users', () => {
         expect(result.status).toBe(400);
         expect(result.body.errors).toBeDefined();
     });
+
+    it('should return unmatched route for wrong registration path', async () => {
+        const result = await supertest(web).post('/users').send({
+            username: 'test', password: '123456', name: 'test',
+        });
+
+        expect(result.status).toBe(404);
+    });
 });
 
 describe('POST /api/users/login', () => {
